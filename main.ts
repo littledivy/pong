@@ -4,8 +4,8 @@ import {
   Event,
   EventType,
   Font,
-  TextureCreator,
   Rect,
+  TextureCreator,
   Window,
   WindowBuilder,
 } from "jsr:@divy/sdl2@0.10.1";
@@ -82,9 +82,12 @@ class Pong {
     this.rightPaddle.draw(this.canvas);
     this.ball.draw(this.canvas);
 
-    const surface = this.font.renderSolid(`Score: ${this.leftPaddle.score} | ${this.rightPaddle.score}`, new Color(255, 255, 255));
+    const surface = this.font.renderSolid(
+      `Score: ${this.leftPaddle.score} | ${this.rightPaddle.score}`,
+      new Color(255, 255, 255),
+    );
     const scoreTexture = this.creator.createTextureFromSurface(surface);
-	const query = scoreTexture.query();
+    const query = scoreTexture.query();
     this.canvas.copy(scoreTexture, null, new Rect(10, 10, query.w, query.h));
 
     this.canvas.present();
