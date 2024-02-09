@@ -1,0 +1,6 @@
+{
+  "unstable": ["ffi"],
+  "tasks": {
+    "start": "deno run --allow-ffi --allow-env=DENO_SDL2_PATH main.ts"
+  }
+}

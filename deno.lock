@@ -1,0 +1,12 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@divy/sdl2@0.10.1": "jsr:@divy/sdl2@0.10.1"
+    }
+  },
+  "remote": {
+    "https://jsr.io/@divy/sdl2/0.10.1/byte_type.ts": "4a85441caeff5682188600acd2432189e8843a09e0e3570ddad23c5940504974",
+    "https://jsr.io/@divy/sdl2/0.10.1/mod.ts": "ec76867ba7fecf3da742d502d858ffc7510f19b60390239b0b15e5a3c4acfb0e"
+  }
+}
